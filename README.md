@@ -17,7 +17,7 @@ Before running the HOI system, make sure you have the following dependencies ins
 1. Clone the HOI repository to your local machine:
 
 ```bash
-
+https://github.com/sxalem/turtlebot_simulation.git
 ```
 
 
