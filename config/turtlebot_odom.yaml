@@ -1,0 +1,5 @@
+wheel_left_joint_name: turtlebot/kobuki/wheel_left_joint
+wheel_right_joint_name: turtlebot/kobuki/wheel_right_joint
+
+odom_frame: odom
+base_frame: turtlebot/kobuki/base_footprint

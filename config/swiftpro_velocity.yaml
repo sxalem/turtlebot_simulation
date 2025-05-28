@@ -1,0 +1,11 @@
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 100.0
+
+joint_velocity_controller:
+  type: velocity_controllers/JointGroupVelocityController
+  joints:
+    - swiftpro/joint1
+    - swiftpro/joint2
+    - swiftpro/joint3
+    - swiftpro/joint4

@@ -1,0 +1,20 @@
+<launch>
+    <!-- Include the basic turtlebot simulation -->
+    <include file="$(find turtlebot_simulation)/launch/turtlebot_basic2.launch">
+        <arg name="robot_name" value="turtlebot"/>
+        <arg name="simulation_data" value="$(find turtlebot_simulation)/resources"/>
+        <arg name="scenario_description" value="$(find turtlebot_simulation)/scenarios/turtlebot_hoi.scn"/>
+        <arg name="simulation_rate" value="1000.0"/>
+        <arg name="graphics_resolution" value="1200 800"/>
+        <arg name="graphics_quality" value="high"/>
+    </include>
+
+    <!-- Launch Dead Reckoning Node -->
+    <node name="dead_reckoning" pkg="turtlebot_simulation" type="DeadReckoning.py" output="screen"/>
+
+    <!-- Launch ArUco Detection Node -->
+    <node name="aruco_detector" pkg="turtlebot_simulation" type="aurco.py" output="screen"/>
+
+
+</launch>
+

@@ -1,0 +1,13 @@
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 100.0
+
+passive_joint_position_controller:
+  type: position_controllers/JointGroupPositionController
+  joints:
+    - swiftpro/passive_joint1
+    - swiftpro/passive_joint2
+    - swiftpro/passive_joint3
+    - swiftpro/passive_joint5
+    - swiftpro/passive_joint7
+    - swiftpro/passive_joint8

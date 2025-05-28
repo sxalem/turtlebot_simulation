@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>turtlebot_simulation</name>
+  <version>1.0.0</version>
+  <description>
+    turtlebot_simulation contains simulation setups for Kobuki, SwiftPro and the whole Turtlebot.
+  </description>
+  <author email="patryk.cieslak@udg.edu">Patryk Cieslak</author>
+  <maintainer email="patryk.cieslak@udg.edu">Patryk Cieslak</maintainer>
+  <license>BSD</license>
+
+  <!-- build tool -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- core dependencies -->
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>stonefish_ros</depend>
+
+  <!-- image & vision -->
+  <depend>cv_bridge</depend>
+  <depend>sensor_msgs</depend>
+  <depend>image_transport</depend>
+
+  <!-- TF -->
+  <depend>tf</depend>
+
+  <!-- navigation & geometry -->
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- std msgs -->
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+
+  <!-- visualization -->
+  <depend>visualization_msgs</depend>
+
+  <!-- (Optional) if you want rosdep to install matplotlib -->
+  <exec_depend>python3-matplotlib</exec_depend>
+
+  <export>
+  </export>
+</package>
+
